@@ -6,7 +6,7 @@ public enum Condition {
     EXCELLENT(5);
 
 
-    private Integer code;
+    private final Integer code;
     Condition(Integer code) {
         this.code = code;
     }

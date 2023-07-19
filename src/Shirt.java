@@ -1,15 +1,19 @@
 public class Shirt extends Clothes {
 
-    private boolean shortSleeve;
+    private boolean shirtSleeve;
 
 
-    public Shirt(Gender gender, Condition clothes, boolean shortSleeve) {
-        super(gender, clothes);
-        this.shortSleeve = shortSleeve;
+    public Shirt(Gender gender, Condition clothes, boolean shirtSleeve) {
+        super("ing", gender, clothes);
+        this.shirtSleeve = shirtSleeve;
     }
 
     public boolean isShortSleeve() {
-        return shortSleeve;
+        return shirtSleeve;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + ", " + (shirtSleeve ? "Long Sleeve" : "Short Sleeve");
+    }
 }

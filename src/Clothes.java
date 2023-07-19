@@ -1,18 +1,29 @@
 public abstract class Clothes {
 
+    String type;
     Gender gender;
-    Condition clothes;
+    Condition condition;
 
-    public Clothes(Gender gender, Condition clothes) {
+    public Clothes(String type, Gender gender, Condition condition) {
+        this.type = type;
         this.gender = gender;
-        this.clothes = clothes;
+        this.condition = condition;
     }
 
     public Gender getGender() {
         return gender;
     }
 
-    public Condition getClothes() {
-        return clothes;
+    public Condition getCondition() {
+        return condition;
+    }
+
+    @Override
+    public String toString() {
+        return "Clothes{" +
+                "type='" + type + '\'' +
+                ", gender=" + gender +
+                ", condition=" + condition +
+                '}';
     }
 }

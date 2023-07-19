@@ -1,4 +1,4 @@
-public enum JacketType {
+public enum CoatType {
 
     RAIN("esőkabát"),
     AUTUMN("őszi"),
@@ -6,7 +6,7 @@ public enum JacketType {
 
     private String magyarnev;
 
-    JacketType(String magyarnev) {
+    CoatType(String magyarnev) {
         this.magyarnev = magyarnev;
     }
 

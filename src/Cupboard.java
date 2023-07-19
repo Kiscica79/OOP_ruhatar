@@ -5,10 +5,6 @@ public class Cupboard {
     List<Clothes> clothes  = new ArrayList<>();
 
 
-    public Cupboard(List<Clothes> clothes) {
-        this.clothes = clothes;
-    }
-
     public List<Clothes> getClothes() {
         return clothes;
     }
